@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Reset ─────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px; /* offset for sticky navbar */
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #e2e2f0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ─── Custom Scrollbar ───────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 10px;
+}
+
+/* ─── Selection Color ────────────────────────── */
+::selection {
+  background: #6c63ff44;
+  color: #a78bfa;
+}
+
+/* ─── Reusable Utility Classes ───────────────── */
+@layer components {
+  /* Section wrapper: consistent vertical padding */
+  .section-wrapper {
+    @apply py-20 px-4 sm:px-8 max-w-6xl mx-auto;
+  }
+
+  /* Section heading style */
+  .section-heading {
+    @apply text-3xl sm:text-4xl font-bold text-text mb-2;
+  }
+
+  /* Accent underline bar beneath headings */
+  .heading-accent {
+    @apply w-12 h-1 rounded-full bg-accent mb-10;
+  }
+
+  /* Glassmorphism card */
+  .glass-card {
+    @apply bg-card border border-border rounded-2xl p-6 backdrop-blur-sm;
+    background: rgba(22, 22, 31, 0.7);
+  }
+
+  /* Pill/tag badge */
+  .skill-tag {
+    @apply text-xs font-mono px-3 py-1 rounded-full border border-accent/30 text-accent bg-accent/10;
+  }
+
+  /* Gradient text utility */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #6c63ff 0%, #a78bfa 100%);
+  }
+}
+
+/* ─── Gradient Glow Orbs (background ambiance) ─ */
+.glow-orb {
+  position: fixed;
+  border-radius: 9999px;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.15;
+}
