@@ -48,7 +48,7 @@ export default function About() {
             {[
               { value: "250+", label: "LeetCode" },
               { value: "600+", label: "SkillRack" },
-              { value: "10+",    label: "Projects"  },
+              { value: "15+",    label: "Projects"  },
             ].map(({ value, label }) => (
               <div key={label}>
                 <p className="text-2xl font-bold gradient-text">{value}</p>

@@ -5,7 +5,7 @@
  */
 
 export const personal = {
-  name: "Pranesh K A",
+  name: "Pranesh",
   role: "Full-Stack Developer",
   tagline: "Building real-world web apps with the MERN stack.",
   location: "Tamil Nadu, India",
@@ -52,15 +52,7 @@ export const projects = [
     liveLink : "https://crispii.live/",
     githubLink: "https://github.com/praneshkA/crispii",
     featured: true,
-  },
-  {
-    title: "PrimeFix – Service Booking App",
-    description:
-      "Secure platform connecting users with household repair technicians. Features real-time map tracking via Leaflet, secure payments, and role-based dashboards for users, admins, and technicians.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Leaflet API"],
-    liveLink: "https://unrivaled-fairy-06e33f.netlify.app/",
-    githubLink: "https://github.com/praneshkA/PrimeFix",
-    featured: true,
+    image: "/assets/crispii.png",
   },
   {
     title: "CI/CD 2-Tier AWS Deployment",
@@ -73,21 +65,27 @@ export const projects = [
       image: "/assets/cloud.png",
   },
   {
+    title: "PrimeFix – Service Booking App",
+    description:
+      "Secure platform connecting users with household repair technicians. Features real-time map tracking via Leaflet, secure payments, and role-based dashboards for users, admins, and technicians.",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Leaflet API"],
+    liveLink: "https://unrivaled-fairy-06e33f.netlify.app/",
+    githubLink: "https://github.com/praneshkA/PrimeFix",
+    featured: true,
+    image: "/assets/primefix.png",
+  },
+  
+  {
   title: "ShoppingCart- E-Commerce Platform",
   description:
     "Developed a full-stack e-commerce platform using the MERN stack with user authentication, product search and filtering, shopping cart management, order tracking, and a responsive UI for mobile and desktop. Implemented RESTful APIs, MongoDB database management, and scalable frontend design.",
   tech: [
-    "MongoDB",
-    "Express.js",
-    "React.js",
-    "Node.js",
-    "RESTful APIs",
-    "JWT Authentication",
-    "CSS",
+    "MongoDB","Express.js","React.js","Node.js","RESTful APIs","JWT Authentication","CSS",
   ],
-  liveLink: "https://stylecart1.netlify.app/",
+  liveLink: "https://stylecart12.netlify.app/",
   githubLink: "https://github.com/praneshkA/ShoppingCart/tree/main/frontend",
   featured: true,
+  image: "/assets/e-commerce.png",
 },
 {
   title: "RWA Member Info Panel",
@@ -106,6 +104,7 @@ export const projects = [
   liveLink: "https://rwa-info-panel.vercel.app/",
   githubLink: "https://github.com/praneshkA/RWA-info-panel/tree/main",
   featured: true,
+  image: "/assets/RWA.png",
 },
 {
   title: "SnapLink Analytics",
@@ -128,6 +127,7 @@ export const projects = [
   liveLink: "https://katomaran-url.netlify.app",
   githubLink: "https://github.com/praneshkA/URL-Shortener",
   featured: true,
+  image: "/assets/URL.png",
 }
 
 ];
